@@ -1,0 +1,25 @@
+appname: blog
+# debug|release|test
+debug: debug
+
+# http server config
+server:
+  host: 127.0.0.1
+  port: 8081
+
+# graceful restart method
+graceful:
+  # default | overseer(pid don't change while program restart)
+  method: overseer
+  # method=overser,you must config pid field.
+  pid: pid
+
+# logger config
+logger:
+  # debug|info|warn|response|dpanic|panic|fatal
+  level: "debug"
+  filename: "application.log"
+  max_age: 1
+  max_backups: 1
+  max_size: 10
+
