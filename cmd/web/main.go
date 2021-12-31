@@ -22,7 +22,7 @@ var (
 
 func init() {
 	flag.StringVar(&Name, "name", "blog", "application name, eg: -name blog")
-	flag.StringVar(&conf, "conf", "../configs", "config path, eg: -conf config.yaml")
+	flag.StringVar(&conf, "conf", "./configs", "config path, eg: -conf ../../config.yaml")
 	flag.StringVar(&env, "env", "", "enviroment load different config, default is null string, eg: -env test")
 }
 
